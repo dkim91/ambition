@@ -3,9 +3,7 @@ import random
 from turtlestore import turtlestatus
 import time
 t.shape("turtle")
-
-
-
+t.speed(5)
 t.score = 0
 #score=0    11`                         1``
 def turn_up():
@@ -23,9 +21,9 @@ def fire():
     while t.ycor()>0:
         t.speed(0)
         t.fd(15)
-
+###
         t.right(5)
-        t.speed(3)
+        t.speed(6)
 
     d=t.distance(t.target,0)
     t.sety(random.randint(10,100))
@@ -57,7 +55,7 @@ def fire():
     t.isMoving = False
 def InitializeFirstStage():
     t.isMoving = False
-
+    ##asdasdfsdasdf
     t.goto(-300,0)
     t.down()
     t.goto(300,0)
